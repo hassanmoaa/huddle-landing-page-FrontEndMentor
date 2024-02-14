@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://github.com/hassanmoaa/huddle-landing-page-FrontEndMentor.git)
+- Live Site URL: (https://cheerful-rolypoly-5f4514.netlify.app)
 
 ### Built with
 
