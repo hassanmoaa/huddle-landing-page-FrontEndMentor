@@ -1,0 +1,195 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+:root {
+
+    /* primary */
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+
+    /* fonts */
+    --ff: "Open Sans", sans-serif;
+    --ff2: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(images/bg-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: var(--Violet);
+}
+
+.container {
+    max-width: 375px;
+
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.hero {
+    padding: 2rem;
+    font-family: var(--ff2);
+    text-align: center;
+}
+
+.logo {
+    max-width: 50%;
+    margin: 0 3rem 3rem 0;
+}
+
+.mockup {
+    margin-bottom: 3rem;
+}
+
+.anchor {
+    display: block;
+
+    padding: .7rem 0;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 5px hsl(0, 0%, 26%);
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.anchor:hover,
+.anchor:focus {
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem auto;
+}
+
+.fa-brands {
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: .8rem;
+    margin: 0 .4rem 1rem .4rem;
+}
+
+
+
+p {
+    margin-bottom: 1rem;
+    color: lightgrey;
+}
+
+
+@media (min-width: 600px) {
+
+    body {
+        background-image: url(images/bg-desktop.svg);
+    }
+
+    .container {
+        max-width: 1300px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .hero {
+        text-align: left;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .col {
+        margin-left: 2rem;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .mockup {
+        width: 60%;
+    }
+
+    .anchor {
+        text-align: center;
+        max-width: 40%;
+    }
+
+    footer {
+        justify-content: flex-end;
+        margin: 0 2rem 1rem 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
